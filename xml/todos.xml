@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<skin version="1.0">
+    <window id="Todos" w="%Todolist_width%" default="1">
+    	<image element="color.bg" x1="0" y1="3" origin2="BOTTOM-RIGHT" x2="0" y2="0" />
+        <image element="bitmap.todo.title" origin="TOP-RIGHT" x="-20" y="8" />
+    	<text x="7" y="8" align="TOP-LEFT" element="font.title" text="Todo:" color="color.title"  />
+    	<scrollgroup origin1="TOP-LEFT" x1="10" y1="28" origin2="TOP-RIGHT" x2="-12" y2="%Todolist_height%" thumbelement="bitmap.scroll.thumb" barelement="bitmap.scroll.bar" barscaling="TILE" thumbscaling="TILE" thumbmargins="0,5,0,5" barmargins="0,5,0,5" showscrollbaraways="0" shrinktofit="%Todolist_shrink%">
+            <todolist origin1="TOP-LEFT" x1="0" y1="0" origin2="BOTTOM-RIGHT" x2="0" y2="0">
+                <header>
+                    <appearance padding="0,0,0,0" element="font.small.b" color="color.head.list" effect="NORMAL" align="TOP-LEFT" />
+                </header>
+                <item>
+                    <appearance padding="1,0,0,3" element="font.small" color="color.contents" effect="NORMAL" align="TOP-LEFT" />
+                </item>
+                <overdueitem>
+                    <appearance priority="200" padding="9,0,0,3" element="font.small.b" color="250,0,0,255" effect="SHADOW" align="TOP-LEFT" />
+                    <image element="bitmap.todo.overdue" origin="TOP-LEFT" x="0" y="0" />
+                </overdueitem>
+                <progressbar element="bitmap.progressbar.large" origin1="TOP-LEFT" x1="10" y1="0" origin2="BOTTOM-RIGHT" x2="0" y2="0" scaling="TILE" margins="2,0,2,0" />
+                <separator padding="0,10,0,0" />
+            </todolist>
+        </scrollgroup>
+    	<image element="color.bg" origin="BOTTOM-LEFT" x="0" y="0r" w="0" h="5" />
+    </window>
+</skin>

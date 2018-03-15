@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<skin version="1.0">
+    <elements>
+        <bitmap id="button.add" file="images/button-add.png" frames="3" />
+        <bitmap id="button.close" file="images/button-close.png" frames="3" />
+        <bitmap id="button.home" file="images/button-home.png" frames="3" />
+        <bitmap id="button.left" file="images/button-left.png" frames="3" />
+        <bitmap id="button.right" file="images/button-right.png" frames="3" />
+
+        <bitmap id="bitmap.scroll.bar" file="images/scroll-bar.png" />
+        <bitmap id="bitmap.scroll.thumb" file="images/scroll-thumb.png" frames="3" />
+        <bitmap id="bitmap.progressbar.small" file="images/progressbar-small.png" />
+        <bitmap id="bitmap.progressbar.large" file="images/progressbar-large.png" />
+
+        <bitmap id="bitmap.calendar.bg.today" file="images/calendar-bg-today.png" />
+        <bitmap id="bitmap.calendar.bg.weekend" file="images/calendar-bg-weekend.png" />
+        <bitmap id="bitmap.calendar.todo.green" file="images/calendar-todo-green.png" />
+        <bitmap id="bitmap.calendar.todo.yellow" file="images/calendar-todo-yellow.png" />
+        <bitmap id="bitmap.calendar.todo.red" file="images/calendar-todo-red.png" />
+        <bitmap id="bitmap.calendar.todo.blue" file="images/calendar-todo-blue.png" />
+        <bitmap id="bitmap.calendar.todo.violet" file="images/calendar-todo-violet.png" />
+        <bitmap id="bitmap.calendar.todo.gray" file="images/calendar-todo-gray.png" />
+
+        <bitmap id="bitmap.event.title" file="images/event-title.png" />
+
+        <bitmap id="bitmap.todo.title" file="images/todo-title.png" />
+        <bitmap id="bitmap.todo.overdue" file="images/todo-overdue.png" />
+        <bitmap id="bitmap.todo.c.green" file="images/todo-category-green.png" />
+        <bitmap id="bitmap.todo.c.yellow" file="images/todo-category-yellow.png" />
+        <bitmap id="bitmap.todo.c.red" file="images/todo-category-red.png" />
+        <bitmap id="bitmap.todo.c.blue" file="images/todo-category-blue.png" />
+        <bitmap id="bitmap.todo.c.violet" file="images/todo-category-violet.png" />
+
+        <bitmap id="bitmap.tooltip" file="images/tooltip.png" frames="4" />
+        <bitmap id="bitmap.alarm" file="images/alarm.png" />
+        <bitmap id="bitmap.trayicon.windows" file="images/trayicon-windows.png" frames="53" />
+        <bitmap id="bitmap.trayicon" file="images/trayicon.png" frames="31" />
+
+        <solid id="color.white" color="255,255,255,255" />
+        <solid id="color.black" color="0,0,0,255" />
+        <solid id="color.bg" color="0,0,0,128" />
+
+        <font id="font.calendar.year" facename="Trebuchet MS" size="8" />
+        <font id="font.calendar.month" facename="Trebuchet MS" size="10" weight="bold" />
+        <font id="font.calendar.weekday" facename="Trebuchet MS" size="6" />
+        <font id="font.calendar.weekend" facename="Trebuchet MS" size="8" weight="bold" />
+        <font id="font.calendar.day" facename="Trebuchet MS" size="8" />
+
+        <font id="font.title" facename="Trebuchet MS" size="10" weight="bold" />
+        <font id="font.alarm" facename="Trebuchet MS" size="12" weight="bold" />
+        <font id="font.big" facename="Trebuchet MS" size="10" />
+        <font id="font.normal" facename="Trebuchet MS" size="9" />
+        <font id="font.normal.b" facename="Trebuchet MS" size="9" weight="bold" />
+        <font id="font.small" facename="Trebuchet MS" size="8" />
+        <font id="font.small.b" facename="Trebuchet MS" size="8" weight="bold" />
+    </elements>
+
+    <colors>
+        <color id="color.calendar.year" rgba="255,255,255,255" />
+        <color id="color.calendar.month" rgba="255,255,255,255" />
+        <color id="color.calendar.weekday" rgba="150,150,150,255" />
+        <color id="color.calendar.day" rgba="200,200,200,255" />
+        <color id="color.calendar.weekend" rgba="255,255,255,255" />
+        <color id="color.calendar.exday" rgba="90,90,90,255" />
+        <color id="color.calendar.exweekend" rgba="115,115,115,255" />
+
+        <color id="color.title" rgba="255,255,255,255" />
+        <color id="color.head.list" rgba="200,200,200,255" />
+        <color id="color.contents" rgba="255,255,255,255" />
+        <color id="color.event" rgba="105,180,255,255" />
+        <color id="color.holiday" rgba="255,120,120,255" />
+    </colors>
+
+    <categories>
+        <category id="0일정">
+            <appearance target="1" element="font.normal.b" color="color.event" align="CENTER" />
+            <appearance target="2" layer="0" priority="1" element="font.normal" color="color.event" align="LEFT" />
+        </category>
+        <category id="0휴일">
+            <appearance target="1" element="font.normal.b" color="color.holiday" align="CENTER" />
+            <appearance target="1" element="bitmap.calendar.bg.weekend" layer="-1"/>
+            <appearance target="2" layer="0" priority="1" element="font.normal" color="color.holiday" align="LEFT" />
+        </category>
+        <category id="1개인">
+            <appearance target="1" layer="-1" priority="1" element="bitmap.calendar.todo.green" align="TOP-LEFT" showalways="1" offset="3,-2" />
+            <appearance target="30" layer="0" priority="1" element="bitmap.todo.c.green" showalways="1" />
+        </category>
+        <category id="2취미">
+            <appearance target="1" layer="-1" priority="1" element="bitmap.calendar.todo.yellow" align="TOP-LEFT" showalways="1" offset="3,-2" />
+            <appearance target="30" layer="0" priority="1" element="bitmap.todo.c.yellow" showalways="1" />
+        </category>
+        <category id="3학습">
+            <appearance target="1" layer="-1" priority="1" element="bitmap.calendar.todo.red" align="TOP-LEFT" showalways="1" offset="3,-2" />
+            <appearance target="30" layer="0" priority="1" element="bitmap.todo.c.red" showalways="1" />
+        </category>
+        <category id="4작업">
+            <appearance target="1" layer="-1" priority="1" element="bitmap.calendar.todo.blue" align="TOP-LEFT" showalways="1" offset="3,-2" />
+            <appearance target="30" layer="0" priority="1" element="bitmap.todo.c.blue" showalways="1" />
+        </category>
+        <category id="5계획">
+            <appearance target="1" layer="-1" priority="1" element="bitmap.calendar.todo.violet" align="TOP-LEFT" showalways="1" offset="3,-2" />
+            <appearance target="30" layer="0" priority="1" element="bitmap.todo.c.violet" showalways="1" />
+        </category>
+        <category id="6완료">
+            <appearance target="1" layer="-1" priority="1" element="bitmap.calendar.todo.gray" align="TOP-LEFT" showalways="1" offset="3,-2" />
+        </category>
+    </categories>
+</skin>

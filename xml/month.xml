@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<skin version="1.0">
+	<window id="Month" w="200">
+		<image element="color.bg" x1="0" y1="0" origin2="BOTTOM-RIGHT" x2="0" y2="0" />
+		<button id="Day View.button.prev" element="button.left" origin="TOP-LEFT" x="5" y="5" action="Global_ShowMonth(-1)" />
+		<button id="Day View.button.next" element="button.right" origin="TOP-RIGHT" x="-14" y="5" action="Global_ShowMonth(+1)" />
+		<month element="font.calendar.month" color="color.calendar.month" x="0" y="5" w="200" align="TOP-CENTER"/>
+		<year element="font.calendar.year" color="color.calendar.year" x="170" y="7" align="TOP-RIGHT"/>
+		<calendar id="current month" w="200" h="150" x="0" y="25" layout="GRID">
+			<weekdays>
+				<appearance priority="-1" element="font.calendar.weekday" color="color.calendar.weekday"/>
+			</weekdays>
+			<days>
+				<appearance priority="-1" element="font.calendar.day" color="color.calendar.day" />
+			</days>
+			<weekends>
+				<appearance priority="-1" element="font.calendar.weekend" color="color.calendar.weekend" />
+				<appearance layer="-2" element="bitmap.calendar.bg.weekend" />
+			</weekends>
+			<exdays showpreexdays="1" showpostexdays="1">
+        		<appearance priority="-1" element="font.calendar.day" color="color.calendar.exday" />
+      		</exdays>
+			<exweekends>
+				<appearance priority="-1" element="font.calendar.weekend" color="color.calendar.exweekend" />
+				<appearance layer="-2" element="bitmap.calendar.bg.weekend" />
+			</exweekends>
+			<today>
+				<appearance layer="101" element="bitmap.calendar.bg.today" showalways="1" offset="1,0" align="CENTER" />
+			</today>
+		</calendar>
+	</window>
+</skin>
