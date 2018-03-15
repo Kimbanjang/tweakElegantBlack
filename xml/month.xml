@@ -18,8 +18,8 @@
 				<appearance layer="-2" element="bitmap.calendar.bg.weekend" />
 			</weekends>
 			<exdays showpreexdays="1" showpostexdays="1">
-        		<appearance priority="-1" element="font.calendar.day" color="color.calendar.exday" />
-      		</exdays>
+				<appearance priority="-1" element="font.calendar.day" color="color.calendar.exday" />
+			</exdays>
 			<exweekends>
 				<appearance priority="-1" element="font.calendar.weekend" color="color.calendar.exweekend" />
 				<appearance layer="-2" element="bitmap.calendar.bg.weekend" />

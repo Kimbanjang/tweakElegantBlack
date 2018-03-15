@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <skin version="1.0">
-
 	<info>
 		<version>1.0</version>
 		<author>Kimbanjang</author>
@@ -8,29 +7,28 @@
 		<homepage>http://funlabz.asuscomm.com</homepage>
 		<screenshot>images/screenshot.png</screenshot>
 		<comment>Tweak in Elegant Skin by Ľubomír Krupa</comment>
-        <history>
-            <version value="1.0">Stable!</version>
-            <version value="0.9">Initial version</version>
-        </history>
+		<history>
+			<version value="1.0">Stable!</version>
+			<version value="0.9">Initial version</version>
+		</history>
 	</info>
 
-    <variables>
-        <variable name="Eventlist_width" default="200" window="Events" description="Defines the maximum width of the event list. The default value is 200 pixels." />
-        <variable name="Eventlist_height" default="300" window="Events" description="Defines the maximum height of the event list. The default value is 300 pixels." />
-        <variable name="Eventlist_shrink" default="1" window="Events" description="Defines 1 to shrink window or 0 to fix height. The default value is 1." />
-        <variable name="Todolist_width" default="200" window="Todos" description="Defines the maximum width of the to do list. The default value is 200 pixels." />
-        <variable name="Todolist_height" default="300" window="Todos" description="Defines the maximum height of the to do list. The default value is 300 pixels." />
-        <variable name="Todolist_shrink" default="1" window="Todos" description="Defines 1 to shrink window or 0 to fix height. The default value is 1." />
-    </variables>
+	<variables>
+		<variable name="Eventlist_width" default="200" window="Events" description="Defines the maximum width of the event list. The default value is 200 pixels." />
+		<variable name="Eventlist_height" default="300" window="Events" description="Defines the maximum height of the event list. The default value is 300 pixels." />
+		<variable name="Eventlist_shrink" default="1" window="Events" description="Defines 1 to shrink window or 0 to fix height. The default value is 1." />
+		<variable name="Todolist_width" default="200" window="Todos" description="Defines the maximum width of the to do list. The default value is 200 pixels." />
+		<variable name="Todolist_height" default="300" window="Todos" description="Defines the maximum height of the to do list. The default value is 300 pixels." />
+		<variable name="Todolist_shrink" default="1" window="Todos" description="Defines 1 to shrink window or 0 to fix height. The default value is 1." />
+	</variables>
 
 	<include file="xml/elements.xml" />
-    <include file="xml/month.xml" />
+	<include file="xml/month.xml" />
 	<include file="xml/events.xml" />
 	<include file="xml/todos.xml" />
 	<include file="xml/tooltip.xml" />
 	<include file="xml/alarm.xml" />
 
-    <trayicon element="bitmap.trayicon.windows" defaultforos="Windows" />
+	<trayicon element="bitmap.trayicon.windows" defaultforos="Windows" />
 	<trayicon element="bitmap.trayicon" />
-
 </skin>

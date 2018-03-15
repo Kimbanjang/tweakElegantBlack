@@ -1,20 +1,20 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <skin version="1.0">
-    <window id="Events" w="%Eventlist_width%" default="1">
-        <image element="color.bg" x1="0" y1="3" origin2="BOTTOM-RIGHT" x2="0" y2="0" />
-        <image element="bitmap.event.title" origin="TOP-RIGHT" x="-20" y="8" />
-        <text x="7" y="8" align="TOP-LEFT" element="font.title" text="Events:" color="color.title"  />
-        <scrollgroup padding="0,0,0,10" origin1="TOP-LEFT" x1="10" y1="28" origin2="TOP-RIGHT" x2="-12" y2="%Eventlist_height%" thumbelement="bitmap.scroll.thumb" barelement="bitmap.scroll.bar" barscaling="TILE" thumbscaling="TILE" thumbmargins="0,5,0,5" barmargins="0,5,0,5" showscrollbaraways="0" shrinktofit="%Eventlist_shrink%">
-            <eventlist origin1="TOP-LEFT" x1="0" y1="0" origin2="BOTTOM-RIGHT" x2="0" y2="0">
-                <header>
-                    <appearance padding="0,0,0,0" element="font.small.b" color="color.head.list" effect="NORMAL" align="TOP-LEFT" />
-                </header>
-                <item>
-                    <appearance padding="0,0,0,0" element="font.normal" color="color.contents" effect="NORMAL" align="TOP-LEFT" />
-                </item>
-                <separator padding="0,10,0,0" />
-            </eventlist>
-        </scrollgroup>
-        <image element="color.bg" origin="BOTTOM-LEFT" x="0" y="0r" w="0" h="5" />
-    </window>
+	<window id="Events" w="%Eventlist_width%" default="1">
+		<image element="color.bg" x1="0" y1="3" origin2="BOTTOM-RIGHT" x2="0" y2="0" />
+		<image element="bitmap.event.title" origin="TOP-RIGHT" x="-20" y="8" />
+		<text x="7" y="8" align="TOP-LEFT" element="font.title" text="Events:" color="color.title"  />
+		<scrollgroup padding="0,0,0,10" origin1="TOP-LEFT" x1="10" y1="28" origin2="TOP-RIGHT" x2="-12" y2="%Eventlist_height%" thumbelement="bitmap.scroll.thumb" barelement="bitmap.scroll.bar" barscaling="TILE" thumbscaling="TILE" thumbmargins="0,5,0,5" barmargins="0,5,0,5" showscrollbaraways="0" shrinktofit="%Eventlist_shrink%">
+			<eventlist origin1="TOP-LEFT" x1="0" y1="0" origin2="BOTTOM-RIGHT" x2="0" y2="0">
+				<header>
+					<appearance padding="0,0,0,0" element="font.small.b" color="color.head.list" effect="NORMAL" align="TOP-LEFT" />
+				</header>
+				<item>
+					<appearance padding="0,0,0,0" element="font.normal" color="color.contents" effect="NORMAL" align="TOP-LEFT" />
+				</item>
+				<separator padding="0,10,0,0" />
+			</eventlist>
+		</scrollgroup>
+		<image element="color.bg" origin="BOTTOM-LEFT" x="0" y="0r" w="0" h="5" />
+	</window>
 </skin>

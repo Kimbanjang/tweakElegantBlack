@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <skin version="1.0">
-    <alarm id="Alarms" threshold="48" textmargins="10,30,10,10" offset="0,0">
-        <image element="bitmap.alarm" margins="5,5,5,5" scaling="STRETCH" origin1="TOP-LEFT" x1="0" y1="0" origin2="BOTTOM-RIGHT" x2="0" y2="0" />
-        <button element="button.add" origin="TOP-RIGHT" x="-40" y="5" action="Global_SnoozeAll()" tooltip="Snooze" />
-        <button element="button.close" origin="TOP-RIGHT" x="-22" y="5" action="Global_DismissAll()" tooltip="Dismiss" />
-        <text x="12" y="6" align="TOP-LEFT" element="font.title" text="Alarm" color="color.title" />
-        <header>
-            <appearance element="font.small.b" color="color.head.list" align="CENTER-LEFT" />
-        </header>
-        <item>
-            <appearance element="font.alarm" color="color.contents" align="CENTER-LEFT" />
-        </item>
-    </alarm>
+	<alarm id="Alarms" threshold="48" textmargins="10,30,10,10" offset="0,0">
+		<image element="bitmap.alarm" margins="5,5,5,5" scaling="STRETCH" origin1="TOP-LEFT" x1="0" y1="0" origin2="BOTTOM-RIGHT" x2="0" y2="0" />
+		<button element="button.add" origin="TOP-RIGHT" x="-40" y="5" action="Global_SnoozeAll()" tooltip="Snooze" />
+		<button element="button.close" origin="TOP-RIGHT" x="-22" y="5" action="Global_DismissAll()" tooltip="Dismiss" />
+		<text x="12" y="6" align="TOP-LEFT" element="font.title" text="Alarm" color="color.title" />
+		<header>
+			<appearance element="font.small.b" color="color.head.list" align="CENTER-LEFT" />
+		</header>
+		<item>
+			<appearance element="font.alarm" color="color.contents" align="CENTER-LEFT" />
+		</item>
+	</alarm>
 </skin>
